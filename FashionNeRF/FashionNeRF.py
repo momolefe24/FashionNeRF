@@ -2,7 +2,7 @@ import os
 import debugpy
 debugpy.listen(5678)
 debugpy.wait_for_client()
-# Hello
+# Hello,
 from config import *
 from datasets import FashionDataset, FashionPipeline
 from utils import *
