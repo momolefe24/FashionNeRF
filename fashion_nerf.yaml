@@ -1,0 +1,8 @@
+---
+# --------------------- Dataset Facts
+datasets:
+ tryon_dataset: "Deep Fashion"
+ fashion_dataset: "Fashion NeRF"
+
+
+

@@ -1,0 +1,16 @@
+setup.py
+src/FashionNeRF.egg-info/PKG-INFO
+src/FashionNeRF.egg-info/SOURCES.txt
+src/FashionNeRF.egg-info/dependency_links.txt
+src/FashionNeRF.egg-info/top_level.txt
+src/config/__init__.py
+src/dataset/__init__.py
+src/dataset/datasets.py
+src/experiments/__init__.py
+src/models/__init__.py
+src/models/model.py
+src/optimizers/__init__.py
+src/results/__init__.py
+src/tools/__init__.py
+src/tools/train.py
+src/tools/utils.py

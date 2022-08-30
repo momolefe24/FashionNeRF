@@ -1,0 +1,57 @@
+---
+# ------------------- Experiment Facts
+experiment_facts:
+ experiment_number: 1
+ run_number: 1
+ experiment_name: "Beta Test for Simple Neural Radiance Field to synthesize novel views."
+ experiment_description: "Reverse engineer code and decide which parts go into the chunking table"
+ cuda: True
+ 
+ checkpoints:
+  checkpoint_nerf: "FashionNeRF.pth"
+
+# ------------------- Result Facts
+results_facts:
+ experiment_number: 1
+ run_number: 1
+ results_path: "../results/experiment_01_run01.yaml"
+
+# ------------------- Dataset Facts
+dataset_facts:
+ model: "marina"
+ folder_path: "../../../Dataset"
+ script_path: "../dataset/dataset.py"
+ transforms:
+  mean:
+   - 0
+   - 0
+   - 0
+  std:
+   - 1
+   - 1
+   - 1
+
+
+# ------------------- Model Facts
+model_facts:
+ script_path: "../models/model.py"
+ in_channels: 3
+
+# ------------------- Evaluation Facts
+evaluation_facts:
+ root_path: "../../"
+ training_evaluation:
+  training_loss: ""
+  training_images: ""
+ weights: "weights/"
+ samples: "samples/"
+ summary: "summary/"
+ writer_logs: "logs/"
+
+# ------------------- Training Facts
+training_facts:
+ script_path: "../tools/train.py"
+ num_epochs: 2500
+ batch_size: 2
+ num_workers: 1 
+ learning_rate: 1.0e-5

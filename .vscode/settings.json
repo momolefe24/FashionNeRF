@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./FashionNeRF/src/dataset",
+        "./FashionNeRF/src/tools"
+    ]
+}
