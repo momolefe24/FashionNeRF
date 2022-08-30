@@ -1,7 +1,8 @@
-import os 
+import os
 import debugpy
 debugpy.listen(5678)
 debugpy.wait_for_client()
+# Hello
 from config import *
 from datasets import FashionDataset, FashionPipeline
 from utils import *
@@ -15,7 +16,7 @@ from torch.utils.data import Dataset,DataLoader,ConcatDataset
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# argparse 
+# argparse
 model_3d = "dennis3"
 transform = transforms.ToTensor()
 train_dataset = FashionDataset(model=model_3d,data="test",type="depth")
